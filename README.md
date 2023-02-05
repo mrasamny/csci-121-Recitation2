@@ -17,7 +17,7 @@ In this recitation, you will begin to develop familiarity with using Greefoot.  
 
 Greenfoot is 2-dimensional gaming platform with a compact Java API that makes it easy to learn Java while also creating games.  The plaform was designed and developed by the same group that developed BlueJ.  Greenfoot consists of a world and actors that interact with the world and with each other.  The platform starts with some base abstract classes that contain all the behaviors of a world object and an actor object.  Those behaviors are inherited by any world or actor that the programmer defines.  So, Greefoot makes use of the inheritance capabilites of Java.  Inheritance will be the topic of future recitation. For this recitation, we will focus on solving a very specific but relavent problem; growing and shrinking a circle actor.
 
-<p style="text-align:center;"><img width="400" src="greenfoot.png"></p>
+<p style="text-align:center;"><img width="400" src="images/greenfoot.png"></p>
 
 Even more challenging is the fact that we will not be able to control the redius size using branching or loops. We will make use of the fact that Greenfoot is a simulation loop, and we will be able to utilize this implicit looping to our advantage.
 
@@ -46,15 +46,15 @@ Your task in this recitation is to draw a circle and make the circle grow and sh
 
 Consider the following numberline from 0 to 60,
 
-<p><img src="0to60.png"></p>
+<p><img src="images/0to60.png"></p>
 
 Shifting the number line to the left by 30 results in
 
-<p><img src="neg30to30.png"></p>
+<p><img src="images/neg30to30.png"></p>
 
 So, the numbers 0 to 60 can be mapped to the numbers -30 to 30, as shown below.  Taking the absolute value will result in the radius increasing to 30 and then decreasing back down to 0.
 
-<p><img src="mapping.png"></p>
+<p><img src="images/mapping.png"></p>
 
 For example, let count = 29.  Shifting count by 30 results in 29-30 = -1.  Taking the absolute value of -1 results in 1.  The table below shows this transformation for each value from 0 to 60.
 
