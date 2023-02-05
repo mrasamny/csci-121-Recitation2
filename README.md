@@ -11,19 +11,19 @@ iii. Use different primitive types in Java.
 
 ## Introduction
 
-In this recitation, you will begin to develop familiarity with using Greefoot.  You will design an animated circle that continuously grows and contracts with using branching or explicit looping.
+In this recitation, you will begin to develop familiarity with using Greefoot. Then, you will design an animated circle that continuously grows and contracts using branching or explicit looping.
 
 ## What is Greenfoot you ask?
 
-Greenfoot is 2-dimensional gaming platform with a compact Java API that makes it easy to learn Java while also creating games.  The plaform was designed and developed by the same group that developed BlueJ.  Greenfoot consists of a world and actors that interact with the world and with each other.  The platform starts with some base abstract classes that contain all the behaviors of a world object and an actor object.  Those behaviors are inherited by any world or actor that the programmer defines.  So, Greefoot makes use of the inheritance capabilites of Java.  Inheritance will be the topic of future recitation. For this recitation, we will focus on solving a very specific but relavent problem; growing and shrinking a circle actor.
+Greenfoot is a 2-dimensional gaming platform with a compact Java API that makes learning Java while also creating games. The platform was designed and developed by the same group that developed BlueJ. Greenfoot consists of a world and actors that interact with the world and with each other. The platform starts with some base abstract classes that contain all the behaviors of a world object and an actor object. Those behaviors are inherited by any world or actor that the programmer defines. So, Greefoot makes use of the inheritance capabilities of Java. Inheritance will be the topic of future recitation. For this recitation, we will focus on solving a very specific but relevant problem; growing and shrinking a circle actor.
 
 <p style="text-align:center;"><img width="400" src="images/greenfoot.png"></p>
 
-Even more challenging is the fact that we will not be able to control the redius size using branching or loops. We will make use of the fact that Greenfoot is a simulation loop, and we will be able to utilize this implicit looping to our advantage.
+Even more challenging is that we will not be able to control the radius size using branching or loops. We will use the fact that Greenfoot is a simulation loop, and we will be able to utilize this implicit looping to our advantage.
 
 ## Defining a Class
 
-When you start Greenfoot, you are provided with the World and Actor class.  These are abstract classes, meaning they cannot be instantiated.  That is, you cannot create objects from these classes.  You will need to create a subclass from these classes.  A subclass is one that inherits the behaviours provided by it's super class.  In this case, the World class and Actor classes are abstract classes, but also will serve as super classes.  To subclass from the World class and Actor class, perform the following:
+When you start Greenfoot, you are provided with the World and Actor class.  These are abstract classes, meaning they cannot be instantiated.  That is, you cannot create objects from these classes.  You will need to create a subclass from these classes.  A subclass is one that inherits the behaviors provided by its superclass.  In this case, the World class and Actor classes are abstract classes but also will serve as superclasses.  To subclass from the World class and Actor class, perform the following:
 
 1. Right click on the World class and select **New Subclass** from the context sensitive menu. 
 2. Give the class a name (MyWorld), starting with a capital letter.  Do NOT select an image.
@@ -36,7 +36,7 @@ Now, you have a Circle actor that you can place in MyWorld, but the Circle actor
 
 ## A Note About How Greenfoot Works
 
-As was mentioned earlier, Greenfoot is simulation platform that executes in a loop.  On each iteration of the loop, it invokes the act() method for each object created.  All objects created in Greenfoot subclass abstract classes World or Actor.  This means that every object will have an act() method as part of the default behavior. You can override that behavior by implementing your own act() method in your class.  This is how you can allow your objects to animate and interact with other objects in Greenfoot.
+As was mentioned earlier, Greenfoot is a simulation platform that executes in a loop. Each iteration of the loop invokes the act() method for each object created. All objects created in a Greenfoot subclass will abstract classes World or Actor. This means that every object will have an act() method as part of the default behavior. You can override that behavior by implementing your own act() method in your class. This is how you can allow your objects to animate and interact with other objects in Greenfoot.
 
 ## Task at Hand
 
@@ -84,12 +84,9 @@ So, counting modulo 61, shifting by 30, and taking the absolute value will trans
 
 ## Task at Hand - Move Cicle in Random Direction
 
-The Circle code developed in the recitation in Greenfoot has been modified slightly.  The code that pulsates the circle in the **Act()** method
-has been moved into a private helper method called **pulsate()** and the method is invoked in the **Act()** method.  In addition, the **moveIt()**
-method is invoked in the **Act()** method.
+The Circle code developed in the recitation in Greenfoot has been modified slightly.  The code that pulsates the circle in the **Act()** method has been moved into a private helper method called **pulsate()**, and the method is invoked in the **Act()** method.  In addition, the **moveIt()** method, which you will need to implement, is invoked in the **Act()** method.  In addtion, the CircleWorld class adds a Circle object at location (300,200).
 
-A Random (see java.util.Random) instance variable has been added to the Circle class and initialized in the **init()** method.  The orientation of the circle
-has also been set to 90 degrees.  The orientation specifies the direction in which an Actor object moves when a **move()** is invoked on the object.
+A Random (see java.util.Random) instance variable has been added to the Circle class and initialized in the **init()** method.  The orientation of the circle has also been set to 90 degrees.  The orientation specifies the direction in which an Actor object moves when a **move()** is invoked on the object.
 
 Your task for this recitation is to implement the private helper function **moveIt()**.  This function should perform the following,
 
