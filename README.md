@@ -88,7 +88,7 @@ The Circle code developed in the recitation in Greenfoot has been modified sligh
 
 A Random (see java.util.Random) instance variable has been added to the Circle class and initialized in the **init()** method.  The orientation of the circle has also been set to 90 degrees.  The orientation specifies the direction in which an Actor object moves when a **move()** is invoked on the object.
 
-Your task for this recitation is to implement the private helper function **moveIt()**.  This function should perform the following,
+Your task for this recitation is to copy/paste the Circle.java code on this repo into the Greenfoot project from rectitation class.  Then implement the private helper function **moveIt()**.  This function should perform the following,
 
 1. Selects a random value between -10 and 10, inclusively (use the trick of generating a number between 0 and 20 and shifting the number to left by 10).
 2. Gets the current direction of the Circle object and adds the random value to the current direction of the circle.
