@@ -1,6 +1,6 @@
 #Greenfoot project file
-class.CicleWorld.image=fingerprint.jpg
-dependency1.from=CicleWorld
+class.CircleWorld.image=fingerprint.jpg
+dependency1.from=CircleWorld
 dependency1.to=Circle
 dependency1.type=UsesDependency
 editor.fx.0.height=955
@@ -32,7 +32,7 @@ target1.width=120
 target1.x=0
 target1.y=0
 target2.height=70
-target2.name=CicleWorld
+target2.name=CircleWorld
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=120
@@ -40,6 +40,6 @@ target2.x=0
 target2.y=0
 version=3.0.0
 width=932
-world.lastInstantiated=CicleWorld
+world.lastInstantiated=CircleWorld
 xPosition=32
 yPosition=231
