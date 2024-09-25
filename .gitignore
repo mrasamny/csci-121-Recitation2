@@ -10,3 +10,4 @@ gradle*
 *.ctxt
 *.class
 *.iml
+.DS_Store
